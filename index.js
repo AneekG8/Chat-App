@@ -27,8 +27,14 @@ const io = socket(server);
 io.on('connection',(socket)=>{
     console.log('new user connected...id: ' + socket.id);
 
+
+    //listen for a message from client
     socket.on('new-message', data =>{
-        io.sockets.emit('new-message',data);
+        socket.broadcast.emit('new-message',data);
+        socket.emit('new-message',{
+            name: "you",
+            message: data.message
+        })
     })
 })
 
