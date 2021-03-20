@@ -9,9 +9,14 @@
 <body>
 
     <h1>home page</h1>
-    
-    
-    <input type="text" name="user" placeholder="username" required>
+
+    <ul id="users">
+        users:
+        <% users.forEach(user => { %>
+            <li id="<%= user.id %>"><%= user.name %></li>
+        <% }); %> 
+    </ul>
+        
     <input type="text" name="message" placeholder="type here..." required>
     <button id="send">send</button>
     
@@ -19,6 +24,7 @@
 
     </div>
 
+    <div id="feedback"></div>
 <script src="script.js"></script>
 </body>
 </html>
