@@ -1,3 +1,5 @@
 node_modules
 .env
 trial.js
+trial.ejs
+trial.html

@@ -1,0 +1,61 @@
+.neumorphic{
+    background-color: rgb(34, 38, 41);
+    box-shadow: 2.5px 2.5px 5px #454a4e, -5px -5px 10px #0d0e0f;
+    border-radius: 25px;
+    
+}
+
+#chatbox{
+    color: white;
+}
+
+/* #roomList li{
+    background-color: rgb(34, 38, 41);
+    box-shadow: 2.5px 2.5px 5px #454a4e, -5px -5px 10px #0d0e0f;
+    /*border-radius: 25px;
+    padding: 5 rem  !important;
+    margin-bottom: 2 rem    !important;
+
+} */
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgb(34, 38, 41);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #454a4e;
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1b1b1b;
+    
+  }
+
+  @media(max-width: 575px){
+    #sideRoomsList{
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      transform: translateX(-150%);
+    }
+  }
+
+  #sideRoomUsersList{
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    transform: translateX(150%); 
+  }
+
+  
